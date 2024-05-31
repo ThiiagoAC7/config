@@ -9,10 +9,10 @@ local color_schemes = {
     "GruvboxDarkHard",
 }
 
-config.color_scheme = color_schemes[5]
+config.color_scheme = color_schemes[1]
 
 config.window_frame = {
-	font = wezterm.font("Fira Code NFM"),
+	font = wezterm.font("Fira Code"),
 	font_size = 12,
 }
 

@@ -9,6 +9,7 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 dir="$HOME/.config/polybar"
 
 echo "---" | tee -a /tmp/polybar.log 
-polybar -q main -c "$dir/grayblocks/config.ini"  2>&1 | tee -a /tmp/polybar.log & disown
+# polybar -q gray -c "$dir/grayblocks/config.ini"  2>&1 | tee -a /tmp/polybar.log & disown
+polybar main 2>&1 | tee -a /tmp/polybar.log & disown
 
 echo "Bars launched..."
